@@ -87,7 +87,7 @@ x = Lambda(lambda x: K.mean(x, axis=1))(x)
 ```
 
 #### data augmentation
-* mixup (local cv +0.002, lb +0.008)
+* mixup (local cv +0.003, lb +0.008)
 * random select 5s clip + random padding
 * 3TTA
 
