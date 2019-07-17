@@ -9,6 +9,22 @@
 
 * sh run.sh
 
+## requirements
+
+tensorflow_gpu==1.11.0
+numpy==1.14.2
+tqdm==4.22.0
+librosa==0.6.3
+scipy==1.0.0
+iterative_stratification==0.1.6
+Keras==2.1.5
+pandas==0.24.2
+scikit_learn==0.21.2
+
+## Hardware
+* 64GB of RAM
+* 1 tesla P100
+
 ## Solution
 single model CV:  0.89763 
 
@@ -87,7 +103,7 @@ x = Lambda(lambda x: K.mean(x, axis=1))(x)
 ```
 
 #### data augmentation
-* mixup (local cv +0.003, lb +0.008)
+* mixup (local cv +0.002, lb +0.008)
 * random select 5s clip + random padding
 * 3TTA
 

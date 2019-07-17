@@ -1,0 +1,9 @@
+tensorflow_gpu==1.11.0
+numpy==1.14.2
+tqdm==4.22.0
+librosa==0.6.3
+scipy==1.0.0
+iterative_stratification==0.1.6
+Keras==2.1.5
+pandas==0.24.2
+scikit_learn==0.21.2

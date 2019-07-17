@@ -83,7 +83,7 @@ def average(cfg,files,return_pred = False):
         return oof,result
     test = pd.read_csv('../input/sample_submission.csv')
     test.loc[:, test.columns[1:].tolist()] = result
-    test.to_csv('submission.csv', index=False)
+    test.to_csv('../submissions/submission.csv', index=False)
     # print(test)
 
 
