@@ -1,5 +1,5 @@
 
-# Kaggle Freesound Audio Tagging 2019 1st place code
+# Kaggle Freesound Audio Tagging 2019 2nd place code
 
 ## Usage
 
