@@ -265,10 +265,10 @@ def cnn_model(cfg):
     gfeat = GlobalMaxPooling1D()(gfeat)
 
     x = Lambda(lambda t: K.expand_dims(t, axis=1))(x_in)
-    x_mel = Melspectrogram(n_dft=1024, n_hop=cfg.stride, input_shape=(1, K.int_shape(x_in)[1]),
+    x_mel = Melspectrogram(n_dft=1024, n_hop=512, input_shape=(1, K.int_shape(x_in)[1]),
                            # n_hop -> stride   n_dft kernel_size
-                           padding='same', sr=44100, n_mels=cfg.n_mels,
-                           power_melgram=cfg.pm, return_decibel_melgram=True,
+                           padding='same', sr=44100, n_mels=64,
+                           power_melgram=2, return_decibel_melgram=True,
                            trainable_fb=False, trainable_kernel=False,
                            image_data_format='channels_last', trainable=False)(x)
 
