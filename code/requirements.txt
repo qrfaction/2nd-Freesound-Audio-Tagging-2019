@@ -1,5 +1,5 @@
 tensorflow_gpu==1.11.0
-numpy==1.14.2
+numpy==1.22.0
 tqdm==4.22.0
 librosa==0.6.3
 scipy==1.0.0
